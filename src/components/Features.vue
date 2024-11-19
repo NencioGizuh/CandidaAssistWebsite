@@ -1,25 +1,25 @@
 <script setup>
 const features = [
   {
-    title: 'Lightning Fast',
-    description: 'Optimized build process for maximum performance',
+    title: 'Manage your Candida',
+    description: 'Check your sleep quality, Stress levels and glycemic load',
     icon: '⚡'
   },
   {
-    title: 'Modern Stack',
-    description: 'Built with the latest web technologies',
-    icon: '🚀'
+    title: 'Predictive Analysis',
+    description: 'Our analysis helps you keep track of potential yeast overgrowth',
+    icon: '📊'
   },
   {
-    title: 'Developer Experience',
-    description: 'Intuitive tools and excellent debugging support',
-    icon: '💻'
+    title: 'Keep Track',
+    description: 'Look at how your overall score is to prevent yeast overgrowth from happening',
+    icon: '📅'
   }
 ]
 </script>
 
 <template>
-  <div class="py-12 bg-gray-800">
+  <div class="py-12 bg-black">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center">
         <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
@@ -35,7 +35,7 @@ const features = [
           <div v-for="feature in features" :key="feature.title" class="pt-6">
             <div class="flow-root bg-gray-900 rounded-lg px-6 pb-8">
               <div class="-mt-6">
-                <div class="inline-flex items-center justify-center p-3 bg-indigo-500 rounded-md shadow-lg text-3xl">
+                <div class="inline-flex items-center justify-center p-3 bg-white rounded-md shadow-lg text-3xl">
                   {{ feature.icon }}
                 </div>
                 <h3 class="mt-8 text-lg font-medium text-white tracking-tight">{{ feature.title }}</h3>
